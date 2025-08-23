@@ -1,7 +1,4 @@
-import os
-
-print(os.listdir("."))
-file = open(path + "Input.txt", "r")
+file = open(r"2022\Inputs\Day 03 Input.txt", "r")
 
 data = file.read().split('\n')
 

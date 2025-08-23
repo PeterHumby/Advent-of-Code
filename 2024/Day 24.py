@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-file = open(r"Inputs/Day 24 Input.txt", "r")
+file = open(r"2024\Inputs/Day 24 Input.txt", "r")
 data = file.read().split('\n\n')
 
 def XOR(a, b):

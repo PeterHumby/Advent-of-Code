@@ -1,4 +1,4 @@
-file = open(r"Inputs\Day 02 Input.txt", "r")
+file = open(r"2024\Inputs\Day 02 Input.txt", "r")
 
 
 def check(report, start):

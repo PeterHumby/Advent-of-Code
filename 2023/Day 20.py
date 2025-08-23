@@ -1,6 +1,6 @@
 from math import lcm
 
-file = open(r"Inputs\Day 20 Input.txt", "r")
+file = open(r"2023\Inputs\Day 20 Input.txt", "r")
 
 data = file.read()
 

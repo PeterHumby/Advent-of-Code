@@ -1,6 +1,6 @@
 import re
 
-file = open(r"Inputs\Day 03 Input.txt", "r")
+file = open(r"2023\Inputs\Day 03 Input.txt", "r")
 data = file.read()
 
 line_length = data.index('\n')

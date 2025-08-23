@@ -2,7 +2,7 @@ import time
 start_time = time.time()
 
 
-file = open(r"Inputs\Day 10 Input.txt", "r")
+file = open(r"2024\Inputs\Day 10 Input.txt", "r")
 
 t_map = [['-1'] + list(line.strip()) + ['-1'] for line in file]
 t_map.insert(0, (['-1'] * len(t_map[0]))) # Add an upper and lower border to simplify search.

@@ -1,5 +1,4 @@
-path = __file__[:__file__.rfind(__file__[0])] + __file__[0]
-file = open(path + "Input.txt", "r")
+file = open(r"2022\Inputs\Day 02 Input.txt", "r")
 
 data = file.read().split('\n')
 

@@ -4,7 +4,7 @@ import re
 mults = []
 
 
-with open(r"Inputs/Day 03 Input.txt", "r") as file:
+with open(r"2024\Inputs/Day 03 Input.txt", "r") as file:
     data = "do()" + file.read() + "don't()"
 
     #data = "do()_mul(1,1)_do()_mul(2,2)_don't()_mul(3,3)_don't()"

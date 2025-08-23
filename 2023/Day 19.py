@@ -2,7 +2,7 @@ from functools import cache
 import time
 start_time = time.time()
 
-file = open(r"Inputs\Day 19 Input.txt", "r")
+file = open(r"2023\Inputs\Day 19 Input.txt", "r")
 
 workflow_rows, part_rows = file.read().split('\n\n')
 

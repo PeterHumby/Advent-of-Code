@@ -1,4 +1,4 @@
-file = open(r"Inputs\Day 22 Input.txt", "r")
+file = open(r"2023\Inputs\Day 22 Input.txt", "r")
 
 class Brick:
     def __init__(self, x1, y1, z1, x2, y2, z2):

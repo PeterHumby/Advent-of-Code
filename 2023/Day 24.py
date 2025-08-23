@@ -1,4 +1,4 @@
-file = open(r"Inputs\Day 24 Input.txt", "r")
+file = open(r"2023\Inputs\Day 24 Input.txt", "r")
 
 stones = file.read().split('\n')
 

@@ -1,4 +1,4 @@
-file = open(r"Inputs\Day 23 Input.txt", "r")
+file = open(r"2023\Inputs\Day 23 Input.txt", "r")
 
 lines = file.read().split('\n')
 w = len(lines[0])
