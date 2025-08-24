@@ -1,7 +1,7 @@
 from itertools import product
 from functools import cache
 
-file = open(r"2024\Inputs/Day 21 Input.txt", "r")
+file = open(r"2024/Inputs/Day 21 Input.txt", "r")
 
 num_pad = '789456123#0A'
 dir_pad = '#^A<v>'

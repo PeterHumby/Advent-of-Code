@@ -12,7 +12,7 @@ def transpose(block):
     
     return t_block
 
-file = open(r"2023\Inputs\Day 11 Input.txt", "r")
+file = open(r"2023/Inputs/Day 11 Input.txt", "r")
 
 data = file.read().split('\n')
 

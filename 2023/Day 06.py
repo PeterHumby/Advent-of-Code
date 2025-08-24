@@ -1,7 +1,7 @@
 import re
 from math import ceil, floor
 
-file = open(r"2023\Inputs\Day 06 Input.txt", "r")
+file = open(r"2023/Inputs/Day 06 Input.txt", "r")
 
 data = file.read().split('\n')
 

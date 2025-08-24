@@ -1,7 +1,7 @@
 import time
 start_time = time.time()
 
-file = open(r"2023\Inputs\Day 16 Input.txt", "r")
+file = open(r"2023/Inputs/Day 16 Input.txt", "r")
 
 grid = [list(row) for row in file.read().split('\n')]
 w, h = len(grid[0]), len(grid)

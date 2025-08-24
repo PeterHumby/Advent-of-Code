@@ -1,5 +1,5 @@
 
-file = open(r"2024\Inputs\Day 12 Input.txt", "r")
+file = open(r"2024/Inputs/Day 12 Input.txt", "r")
 
 data = file.read()
 rows = [list(line) for line in data.split('\n')]

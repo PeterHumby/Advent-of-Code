@@ -1,6 +1,6 @@
 from itertools import pairwise
 
-file = open(r"2024\Inputs/Day 22 Input.txt", "r")
+file = open(r"2024/Inputs/Day 22 Input.txt", "r")
 
 def evolve(n):
     n = ( (n << 6) ^ n) % 16777216

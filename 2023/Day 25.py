@@ -4,7 +4,7 @@ import os
 os.environ["PATH"] += os.pathsep + 'D:/Program Files (x86)/Graphviz2.38/bin/'
 
 
-file = open(r"2023\Inputs\Day 25 Input.txt", "r")
+file = open(r"2023/Inputs/Day 25 Input.txt", "r")
 data = file.read().split('\n')
 
 connections = {line.split(': ')[0]: set(line.split(': ')[1].split(' ')) for line in data}

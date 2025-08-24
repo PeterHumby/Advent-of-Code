@@ -1,6 +1,6 @@
 
 
-blocks = open(r"2024\Inputs/Day 25 Input.txt", "r").read().split('\n\n')
+blocks = open(r"2024/Inputs/Day 25 Input.txt", "r").read().split('\n\n')
 
 locks = set()
 keys = set()

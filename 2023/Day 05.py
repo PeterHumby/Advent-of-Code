@@ -1,4 +1,4 @@
-file = open(r"2023\Inputs\Day 05 Input.txt", "r")
+file = open(r"2023/Inputs/Day 05 Input.txt", "r")
 data = file.read().split('\n\n')
 
 # For each seed, find the min-max source value and check if the seed falls in that range, otherwise 1-1 mapping.

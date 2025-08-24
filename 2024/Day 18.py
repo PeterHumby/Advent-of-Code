@@ -2,7 +2,7 @@ from copy import deepcopy
 import time
 start_time = time.time()
 
-file = open(r"2024\Inputs/Day 18 Input.txt", "r")
+file = open(r"2024/Inputs/Day 18 Input.txt", "r")
 
 def display(grid, edge=[]):
     display_grid = deepcopy(grid)

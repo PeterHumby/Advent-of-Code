@@ -1,6 +1,6 @@
 import re
 
-file = open(r"2023\Inputs\Day 01 Input.txt", "r")
+file = open(r"2023/Inputs/Day 01 Input.txt", "r")
 
 data = file.read().replace('\n', ' ')
 

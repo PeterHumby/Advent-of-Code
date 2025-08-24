@@ -1,7 +1,7 @@
 import time
 start_time = time.time()
 
-file = open(r"2024\Inputs\Day 13 Input.txt", "r")
+file = open(r"2024/Inputs/Day 13 Input.txt", "r")
 
 configs = file.read().split('\n\n')
 

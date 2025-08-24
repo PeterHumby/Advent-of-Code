@@ -1,6 +1,6 @@
 import re
 
-file = open(r"2023\Inputs\Day 02 Input.txt", "r")
+file = open(r"2023/Inputs/Day 02 Input.txt", "r")
 
 data = list(filter(lambda x: x != '', file.read().split('\n')))
 

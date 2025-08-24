@@ -1,6 +1,6 @@
 
 
-file = open(r"2024\Inputs/Day 14 Input.txt", "r")
+file = open(r"2024/Inputs/Day 14 Input.txt", "r")
 
 w=101
 h=103

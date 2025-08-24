@@ -1,6 +1,6 @@
 from queue import PriorityQueue
 
-file = open(r"2023\Inputs\Day 17 Input.txt", "r")
+file = open(r"2023/Inputs/Day 17 Input.txt", "r")
 
 grid = [list(line) for line in file.read().split('\n')]
 

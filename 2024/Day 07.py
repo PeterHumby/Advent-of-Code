@@ -2,7 +2,7 @@ import numpy as np
 from copy import deepcopy
 
 
-file = open(r"2024\Inputs\Day 07 Input.txt", "r")
+file = open(r"2024/Inputs/Day 07 Input.txt", "r")
 
 def process(elements, ops):
     elms = deepcopy(elements)

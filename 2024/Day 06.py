@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-file = open(r"2024\Inputs\Day 06 Input.txt", "r")
+file = open(r"2024/Inputs/Day 06 Input.txt", "r")
 
 grid = [list(line.strip()) for line in file]
 
