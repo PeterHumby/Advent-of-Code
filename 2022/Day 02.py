@@ -1,4 +1,4 @@
-file = open(r"2022\Inputs\Day 02 Input.txt", "r")
+file = open(r"2022/Inputs/Day 02 Input.txt", "r")
 
 data = file.read().split('\n')
 

@@ -1,4 +1,4 @@
-file = open(r"2022\Inputs\Day 01 Input.txt", "r")
+file = open(r"2022/Inputs/Day 01 Input.txt", "r")
 
 
 elves = sorted([sum([int(n) for n in line.split('\n')]) for line in file.read().split('\n\n')])
