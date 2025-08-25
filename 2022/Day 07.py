@@ -2,13 +2,6 @@ file = open(r"2022/Inputs/Day 07 Input.txt", "r")
 
 lines = file.read().split('\n')
 
-
-p1_tot, p2_tot = 0, 0
-
-current_dir = None
-
-filesystem = {}
-
 class Directory:
 
     def __init__(self, label, parent=None):
