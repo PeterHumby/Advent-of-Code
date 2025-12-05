@@ -1,19 +1,4 @@
-file = open(r"2025/Inputs/Day 05 Input.txt", "r")
 
-
-ranges, ingredients = file.read().split('\n\n')
-
-fresh = [(int(r.split('-')[0]), (int(r.split('-')[1])) + 1) for r in ranges.split('\n')]
-
-acc = 0
-
-for _, ing in enumerate(ingredients.split('\n')):
-    for r in fresh:
-        if int(ing) in range(r[0], r[1]):
-            acc += 1
-            break
-
-print("Part 1: ", acc)
 
 def merge_ranges(ranges): # Merge a list of inclusive ranges stored as tuples in the form (lower_bound, upper_bound).
 
@@ -27,9 +12,3 @@ def merge_ranges(ranges): # Merge a list of inclusive ranges stored as tuples in
             ranges[i - 1] = combine_ranges(ranges[i - 1], ranges.pop(i))
     
     return ranges
-
-fresh = merge_ranges(fresh)
-
-print("Part 2: ", sum([r[1] - r[0] for r in fresh]))
-
-
