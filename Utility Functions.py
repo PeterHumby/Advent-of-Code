@@ -12,3 +12,15 @@ def merge_ranges(ranges): # Merge a list of inclusive ranges stored as tuples in
             ranges[i - 1] = combine_ranges(ranges[i - 1], ranges.pop(i))
     
     return ranges
+
+def transpose(block): # Transpose a matrix in the form of a list of lists.
+    m = len(block)
+    n = len(block[0])
+
+    t_block = [[0 for i in range(m)] for i in range(n)]
+
+    for i in range(m):
+        for j in range(n):
+            t_block[j][i] = block[i][j]
+    
+    return t_block
