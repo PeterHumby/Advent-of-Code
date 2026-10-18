@@ -1,5 +1,3 @@
-from functools import cache
-
 file = open(r"2021/Inputs/Day 07 Input.txt", "r")
 crabs = [int(c) for c in file.read().split(',')]
 

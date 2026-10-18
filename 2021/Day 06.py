@@ -1,5 +1,3 @@
-from functools import cache
-
 file = open(r"2021/Inputs/Day 06 Input.txt", "r")
 nums = file.read()
 fish = {age: nums.count(str(age)) for age in range(9)}
