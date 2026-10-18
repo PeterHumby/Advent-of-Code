@@ -1,5 +1,4 @@
 from functools import reduce
-from itertools import combinations
 
 file = open(r"2021/Inputs/Day 08 Input.txt", "r")
 
