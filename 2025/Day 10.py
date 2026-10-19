@@ -1,6 +1,6 @@
 from functools import reduce
-from itertools import combinations, combinations_with_replacement
-
+from itertools import combinations
+from z3 import *
 file = open(r"2025/Inputs/Day 10 Input.txt", "r")
 
 machines = [line.split(' ') for line in file.read().split('\n')]
@@ -27,16 +27,18 @@ def configure_voltage(M): # Return the minimum number of button presses needed f
     N = len(M[0]) - 2
     target = [int(n) for n in M[-1][1:-1].split(',')]
     button_set = [[int(i in [int(n) for n in bs[1:-1].split(',')]) for i in range(N)] for bs in M[1:-1]]
-    
-    i = min(target)
-    while True:
-        print(i)
-        for c_set in combinations_with_replacement(button_set, i):
-            if add(c_set) == target:
-                return i
-        i += 1
-    
+
+    coeffs = [[b[i] for b in button_set] for i in range(N)]
+
+    for i in range(len(button_set)):
+        globals()['x' + str(i)] = Int('x_' + str(i))
+
+    solver = Solver()
+    for j, cs in enumerate(coeffs):
+        solver.add(eval(' + '.join(['(' + str(c) + ' * x' + str(i) + ') == ' + str(target[j]) for i, c in enumerate(cs)])))
+    print(solver.check())
+        
 print("Part 1: ", sum([min_presses(M) for M in machines]))
 
 
-print("Part 2: ", sum([configure_voltage(M) for M in machines]))
+configure_voltage(machines[0])
